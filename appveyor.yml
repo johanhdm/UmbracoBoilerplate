@@ -1,5 +1,5 @@
 version: 1.0.{build}
-configuration: Release
+configuration: Debug
 before_build:
   - nuget restore
   - cd Umbraco.Boilerplate.Build/Bundler
@@ -10,4 +10,4 @@ nuget:
   project_feed: true
 build:
   project: Umbraco.Boilerplate.sln
-  verbosity: detailed
+  verbosity: high
