@@ -11,4 +11,4 @@ nuget:
   project_feed: true
 build:
   project: Umbraco.Boilerplate.sln
-  verbosity: high
+  verbosity: normal
