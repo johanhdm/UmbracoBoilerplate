@@ -334,6 +334,9 @@
     <None Include="Properties\PublishProfiles\LocalDeploy.pubxml" />
     <Content Include="Static\Scripts\app.js.bundle" />
     <Content Include="Static\Styles\app.css.bundle" />
+    <Content Include="Properties\PublishProfiles\umbracoboilerplate.azurewebsites.net.PublishSettings" />
+    <None Include="Properties\PublishProfiles\umbracoboilerplate - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\umbracoboilerplate - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
