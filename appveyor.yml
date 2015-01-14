@@ -2,7 +2,8 @@ version: 1.0.{build}
 before_build:
   - cd Umbraco.Boilerplate.Build/Bundler
   - npm install
-
+  - cd ..
+  - nuget restore
 nuget:
   project_feed: true
 build:
