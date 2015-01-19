@@ -1,0 +1,132 @@
+
+//*****************************************************
+// MODULE ACCORDION
+//*****************************************************
+
+
+.module.module-standard h3 {
+	margin:0;
+
+	&.left-header {
+		text-align: left;
+	}
+	&.border-header {
+		border-bottom: 1px solid $moduleOutlineColor;
+		padding: 35px 30px;
+	}
+}
+
+.module-accordion {
+		
+	min-height: 0px;
+	//font-size: 16px;	
+
+
+	.panel-group {
+		margin-bottom: 0;
+		.panel {
+			border-radius: 0;
+			border: none;
+			border-bottom: 1px solid $moduleOutlineColor;
+			margin-top: 0;
+		}
+		.panel-body {
+			padding: 0 50px 0 30px;
+
+			img {
+
+				width:100%
+
+			}
+		}
+	}
+	.panel-title {
+		
+		a {
+			display: block;
+			padding: 10px 20px 10px 30px;
+			overflow: hidden;
+			font-size: 16px;
+			color: $primaryTextColor;
+
+			span {
+				float: left;
+			}
+			i {
+				float: right;
+				@extend .glyphicon-custom;
+				@extend .icon-flexpay-arrow-up;
+				font-size: 10px;
+				padding-top: 2px;
+				color:$primaryTextColor;
+			}
+			
+			&.collapsed {
+				
+				i {
+					@extend .icon-flexpay-arrow-down;
+				}
+
+			}
+
+		}
+
+
+		&.new {
+			font-weight: normal;
+			a.collapsed {
+				font-weight: bold;
+			} 
+
+
+		}
+	}
+	.panel-feature a {
+		font-size: 16px;
+		color: $primaryTextColor;
+
+	}
+
+	.accordion-form {
+		overflow: hidden;
+		padding: 15px 40px 0px;
+		background-color: $moduleBackgroundColor;
+		border-left:1px solid $moduleOutlineColor;
+		border-right:1px solid $moduleOutlineColor;
+		border-top:1px solid $moduleOutlineColor;
+		
+		label {
+			color: $primaryTextColor;
+			font-weight: bold;
+			font-size: 16px;
+			text-align: center;
+			display: block;
+          margin-bottom: 15px;
+		}
+		.btn-primary {
+			border-radius: 12px;
+			background-color: $notificationTextColor;
+			font-weight: bold;
+			font-size: 12px;
+			padding:10px 26px;
+		}
+		.submit-group {text-align: center;}
+
+        .dropdown {
+          width:90px; margin:0 auto;
+          button {border:1px solid $moduleOutlineColor; border-radius:0;padding:0; width:90px; height:40px;
+            span {display: inline-block;width:50%;height:100%;padding-top: 10px;}
+            .dropdown-value {background-color:#fff;color:$bodyTextColor;}
+          }
+        }
+	}
+
+
+	.btn-standard {
+
+		.btn-standard-text{ margin-left: 15px; };
+		.btn-standard-arrow{ margin-right: 5px; };
+
+	}
+
+}

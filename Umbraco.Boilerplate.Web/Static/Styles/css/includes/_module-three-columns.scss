@@ -1,0 +1,69 @@
+@import "module-base"; 
+
+//*****************************************************
+// MODULE THREE COLUMNS 
+//*****************************************************
+
+.module {
+
+	&.module-three-colums {
+		padding:0;
+	 margin: 0 0 50px 0;
+	 min-height:302px;
+
+			
+		.module-content-image {
+			text-align: center;
+
+			h3 {
+			      margin: 0 0 0 20px;
+			      padding: 30px 0 0px;
+			      color: $primaryTextColor;
+			      font-weight:900;
+			}	
+
+			.module-icon { 
+				line-height:190px;
+				height: 190px;
+				vertical-align: middle;
+				width:100%;
+				font-size: 113px;
+	 		 	color:$brandColor;
+
+	     	 	&.image {
+					font-size: 0px;
+
+					img {
+			 	 		margin-bottom:20px ;
+			 	 		width: 90px;
+					}
+
+	     	 	}
+
+			}
+		}
+
+
+		.module-content-body { 
+			display: table-cell;
+			vertical-align: middle;
+			height: 300px;
+			padding: 0 56px;
+		} 
+
+
+		.module-content-btns { 
+
+			border-left: 1px solid $moduleOutlineColor;
+			.btn-standard {
+
+		    	  width: 100%;
+		    	  background-color:white;
+		    }
+
+
+		}
+
+
+	}
+}

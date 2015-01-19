@@ -1,0 +1,269 @@
+
+//*****************************************************
+// BUTTON
+//*****************************************************
+
+
+.btn {
+  border-radius: 0px;
+
+}
+
+.btn:focus,
+.btn:active:focus {
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+
+}
+
+
+
+.btn-search-trigger {
+
+   color: white;
+   font-size: 15px;
+
+}
+
+
+//*****************************************************
+// STANDARD BUTTON
+//*****************************************************
+
+.btn-standard {
+
+  font-size: 14px;
+  font-weight: 700;
+  color: $primaryTextColor;
+
+  border-top: 1px solid $moduleOutlineColor;
+  background-color: $standardBtnBackgroundColor;
+  height: 60px;
+  padding:0;
+ 
+
+  
+  .btn-content-wrapper {
+     width:100%;
+     display:table;
+  
+
+
+    .btn-standard-text {
+      display:table-cell;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 95%;
+      max-width: 10px;
+      height: 100%;
+      text-align: left;
+      //margin-left: 30px;
+      margin-top: 2px;
+      padding:  0 0 0 30px; 
+
+    }
+
+    .btn-standard-arrow {
+ 
+        display:table-cell;
+ 
+        width: 5%;
+        height: 100%;
+        text-align: right;
+        margin-top: 6px 0 0 0;
+        padding:  0 20px 0 0; 
+        
+        vertical-align: middle;
+
+    }
+
+  }
+
+  &:hover {
+
+     background-color:darken($standardBtnBackgroundColor, 1%);
+  }
+
+  &:active:focus {
+      background-color: $standardBtnBackgroundColor;
+
+  }
+
+}
+
+//*****************************************************
+// SHOPPING BUTTON
+//*****************************************************
+
+.btn-shop {
+
+  font-size: 14px;
+  font-weight: 700;
+  color: $primaryTextColor;
+  border-top: 1px solid $moduleOutlineColor;
+  background-color: $standardBtnBackgroundColor;
+  height: 60px;
+  padding:0;
+
+  .btn-content-wrapper {
+      
+     display:table;
+     width:100%;
+  }
+
+
+  .btn-shop-icon {
+     display:table-cell;
+     width: 5%;
+     vertical-align: middle;
+     margin: 0;
+     padding-left: 30px;
+     font-size: 20px;
+     
+  }
+
+  .btn-shop-text {
+    display:table-cell;
+    width: 90%;
+    vertical-align: middle;
+    
+    text-align: left;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 10px;
+    margin: 1px 0 0 0px;
+    padding-left: 10px;
+  }
+
+  .btn-shop-arrow {
+    display:table-cell;
+    width: 5%;
+    vertical-align: middle;
+    
+    margin: 2px 0px 0 0;
+    padding-right: 18px;
+
+  }
+
+  
+    
+  &.offer-benefits {
+    background-color: $offerBenefitColor;
+
+    .btn-shop-icon,
+    .btn-shop-text,
+    .btn-shop-arrow {
+      color: white;
+
+    }
+
+     &:hover {
+
+      background-color:darken($offerBenefitColor, 2%);
+    }
+  
+  }
+
+
+  &.offer-benify {
+    background-color: $offerBenifyColor;
+
+    .btn-shop-icon,
+    .btn-shop-text,
+    .btn-shop-arrow {
+      color: white;
+
+    }
+
+     &:hover {
+
+      background-color:darken($offerBenifyColor, 3%);
+    }
+  
+  }
+
+
+
+}
+
+//*****************************************************
+// DOWNLOAD BUTTON
+//*****************************************************
+
+.btn-download {
+
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+
+  border-top: 1px solid $moduleOutlineColor;
+  background-color: $downloadBtnBackgroundColor;
+  height: 60px;
+
+  .btn-download-text {
+
+    margin: 1px 6px 0 20px;
+
+  }
+
+  &:hover {
+
+  	color:white;
+  
+    background-color:darken($downloadBtnBackgroundColor, 3%);
+   
+
+  }
+  
+}
+
+//*****************************************************
+// LINK BUTTON
+//*****************************************************
+
+.btn-link-standard {
+  @extend .btn-link;
+  font-weight: 700;
+  font-size: $linkTextSize;
+  color: $primaryTextColor;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+
+
+  
+    color:darken($primaryTextColor, 20%);
+   
+
+  }
+
+}
+
+.btn-link-list {
+  @extend .btn-link-standard;
+  color: $notificationTextColor;
+  margin: 0;
+  padding: 0;
+
+  &:hover { color:darken($notificationTextColor, 11%);  }
+
+}
+
+
+
+
+.slide-arrow 
+{
+
+  margin-top: 40px;
+
+}
+
+
+

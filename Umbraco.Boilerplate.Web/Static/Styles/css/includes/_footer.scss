@@ -1,0 +1,104 @@
+//*****************************************************
+// FOOTER NAVBAR
+//*****************************************************
+
+.navbar-footer {
+
+  margin: 0;
+  border-radius: 0;
+  background-color: $brandColor;
+  height: 100%;
+
+	.footer-content-wrapper 
+	{
+		display:table;
+		width:100%;
+
+
+		.benify-logo {
+			display:table-cell;
+			vertical-align: middle;
+			height:100px;
+			width:50%;
+		}
+
+		.support-links {
+			display:table-cell;
+			vertical-align: middle;
+			height:100px;
+			width:50%;
+			
+			
+			ul {
+				width:100%;
+				text-align:right;
+			}
+			li {
+
+			
+				display:inline-block;
+				margin-left: 20px;
+
+				a {
+					font-size: 12px;
+					font-weight: 600;
+
+					color:white;
+
+					&:hover {
+
+						text-decoration: none;
+					}
+				}
+
+
+
+			}
+
+		}
+	}
+}
+
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 768px) {
+
+	.navbar-footer {
+		display: block;
+		margin: 0;
+		border-radius: 0;
+		background-color: $brandColor;
+		height: 100%;
+
+		.footer-content-wrapper 
+		{
+			display: block;
+
+			.benify-logo {
+				display: block;
+				margin: 20px 0 0 -10px;
+				text-align: center;
+				height: 100%;
+				width:100%;
+			}
+
+			.support-links {
+				display: inline-block;
+				margin: 20px 0px 40px -10px;
+
+				height:100%;
+				width: 100%;
+
+				ul {
+					width:100%;
+					text-align:center;
+					margin:0;
+					padding:0;
+				}
+
+			}
+		}
+
+	}
+}

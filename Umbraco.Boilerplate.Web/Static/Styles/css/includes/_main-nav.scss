@@ -1,0 +1,108 @@
+//*****************************************************
+// MAIN NAVIGATION
+//*****************************************************
+$menuIconHeight:76px;
+.main-nav {
+	background-color: $backColor;
+	overflow:hidden;
+	
+	ul {padding:0;margin:0;width:100%; list-style-type: none;overflow: hidden;}
+	li {display: block; float:left; width:25%; height:$menuIconHeight;}
+	
+
+	a {
+		
+
+		.icon {
+
+	        &.notification {
+	          position:relative;
+	    
+
+	          &:after {
+
+	            @extend  .glyphicon-custom;
+	            color: $alertColor;
+	            content: 'X';
+	            font-size: 16px;
+	            font-style: normal;
+	            font-weight: normal;
+				width: 34px;
+				height: 5px;
+	            line-height: 5px;
+	            display: block;
+	            position: absolute;
+	            z-index: 101;
+	            top: 0;
+	            left: 0;
+	          }
+
+	        }
+      	}
+
+
+
+		color:$sideMenuIconColor ;font-size:20px;display:block;background-color: transparentize($brandColor, 0.30 );  height:76px;
+		padding:22px 0;text-align: center;
+		&.active { 
+			
+			background-color: $brandColor;
+
+
+			&:hover { 
+				background-color: $brandColor;
+			
+			}
+		}
+
+		
+		
+		&:hover { 
+			background-color: transparentize($brandColor, 0.28 ); 
+			
+		}
+
+	}
+}
+
+.side-panel {
+	left: -304px; /*left or right and the width of your navigation panel*/
+	width: 304px; /*should match the above value*/
+	background-color: #131214;
+	z-index: 300;
+	height: 100%;
+	overflow:auto;
+	position:fixed;
+
+}
+
+.tab-menu-container {
+	position:absolute;
+	top:$menuIconHeight;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow-y:auto;
+	direction:rtl;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab-container {
+	display:none;
+	direction: ltr;
+	&.active {display:block; }
+}
+
+.personal-info {
+	text-align: center;height:260px;padding-top:103px;background-color:$brandColor;
+	h2 {vertical-align: middle; color:#fff;font-size:16px;font-weight: 300;}
+}
+
+.sub-menu {
+	ul {list-style-type: none;}
+	li {margin:38px 0;}
+	a {
+		font-weight:bold; color: #353435;
+		&.active, &:hover {color:#fff; text-decoration: none;}
+	}
+}

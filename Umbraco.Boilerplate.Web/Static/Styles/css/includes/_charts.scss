@@ -1,0 +1,66 @@
+
+
+
+
+@import "module-base";
+
+
+//*****************************************************
+// CHART MODULE
+//*****************************************************
+
+.module {
+
+  &.module-chart {
+    min-height: 406px;
+    .module-content {
+      margin-top: 0px;
+    }
+    .chart-list {
+      margin: 0 0 20px 20px;
+      li {
+        line-height: 0.2;
+        color: #7f7f81;
+      }
+      li:before {
+        color: #3793e9;
+        content: "\2022";
+        font-size: 3em;
+        padding-right: .25em;
+        position: relative;
+        top: .25em;
+      }
+      li.chart-secondary:before {
+        color: #86d052;
+      }
+      li.chart-tertiary:before {
+        color: #FC7A2E;
+      }
+    }
+    .chart-info {
+      text-align: center;
+      color: #7f7f81;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+  }
+}
+
+#donut-chart {
+  width: 99%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.item {
+  .chart-data {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  &.hidden-chart .chart-data {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+.chart {width:99%;margin:0 auto;}

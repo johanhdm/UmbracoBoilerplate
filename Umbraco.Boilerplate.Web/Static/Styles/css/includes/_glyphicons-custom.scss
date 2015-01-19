@@ -1,0 +1,248 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+$custom-icon-font-path:          "../fonts/flexpay/" !default;
+$custom-icon-font-name:          "flexpay-icons" !default;
+$custom-icon-font-svg-id:        "flexpay-icons" !default;
+
+@font-face {
+  font-family: 'flexpay-icons';
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.eot'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.eot'));
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-font-name}.eot?#iefix'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-font-name}.woff'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.woff')) format('woff'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-font-name}.ttf'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.ttf')) format('truetype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-font-name}.svg##{$custom-icon-font-svg-id}'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.svg##{$custom-icon-font-svg-id}')) format('svg');
+}
+
+
+
+
+// Catchall baseclass
+.glyphicon-custom {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'flexpay-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-flexpay-circle-note-arrow:before {
+  content: "b";
+}
+.icon-flexpay-circle-pin:before {
+  content: "c";
+}
+.icon-flexpay-upchart:before {
+  content: "d";
+}
+.icon-flexpay-check:before {
+  content: "e";
+}
+.icon-flexpay-home:before {
+  content: "f";
+}
+.icon-flexpay-arrow-up:before {
+  content: "g";
+}
+.icon-flexpay-pause:before {
+  content: "h";
+}
+.icon-flexpay-arrow-down:before {
+  content: "i";
+}
+.icon-flexpay-settings:before {
+  content: "j";
+}
+.icon-flexpay-em:before {
+  content: "k";
+}
+.icon-flexpay-circle-benefit:before {
+  content: "l";
+}
+.icon-flexpay-close:before {
+  content: "m";
+}
+.icon-flexpay-key:before {
+  content: "n";
+}
+.icon-flexpay-clip:before {
+  content: "o";
+}
+.icon-flexpay-pin:before {
+  content: "p";
+}
+.icon-flexpay-heart:before {
+  content: "q";
+}
+.icon-flexpay-circle-i:before {
+  content: "r";
+}
+.icon-flexpay-circle-em:before {
+  content: "s";
+}
+.icon-flexpay-circle-pause:before {
+  content: "t";
+}
+.icon-flexpay-circle-check:before {
+  content: "u";
+}
+.icon-flexpay-circle-qm:before {
+  content: "v";
+}
+.icon-flexpay-circle-letter:before {
+  content: "w";
+}
+.icon-flexpay-circle-close:before {
+  content: "x";
+}
+.icon-flexpay-money:before {
+  content: "y";
+}
+.icon-flexpay-arrows:before {
+  content: "z";
+}
+.icon-flexpay-user:before {
+  content: "A";
+}
+.icon-flexpay-arrow-left:before {
+  content: "B";
+}
+.icon-flexpay-circle-arrow-right:before {
+  content: "C";
+}
+.icon-flexpay-arrow-right:before {
+  content: "D";
+}
+.icon-flexpay-benefit:before {
+  content: "E";
+}
+.icon-flexpay-qm:before {
+  content: "F";
+}
+.icon-flexpay-circle-money:before {
+  content: "G";
+}
+.icon-flexpay-circle-upchart:before {
+  content: "H";
+}
+.icon-flexpay-circle-lock:before {
+  content: "I";
+}
+.icon-flexpay-circle-clock:before {
+  content: "J";
+}
+.icon-flexpay-circle-note-num:before {
+  content: "K";
+}
+.icon-flexpay-circle-note:before {
+  content: "L";
+}
+.icon-flexpay-circle-search:before {
+  content: "M";
+}
+.icon-flexpay-circle-talk:before {
+  content: "N";
+}
+.icon-flexpay-star:before {
+  content: "O";
+}
+.icon-flexpay-circle-key:before {
+  content: "P";
+}
+.icon-flexpay-clock:before {
+  content: "Q";
+}
+.icon-flexpay-talk:before {
+  content: "R";
+}
+.icon-flexpay-note-em:before {
+  content: "S";
+}
+.icon-flexpay-circle-pen:before {
+  content: "T";
+}
+.icon-flexpay-letter:before {
+  content: "U";
+}
+.icon-flexpay-bell:before {
+  content: "V";
+}
+.icon-flexpay-pen:before {
+  content: "W";
+}
+.icon-flexpay-circle:before {
+  content: "X";
+}
+.icon-flexpay-i:before {
+  content: "Y";
+}
+.icon-flexpay-circle-arrows:before {
+  content: "Z";
+}
+.icon-flexpay-circle-clip:before {
+  content: "0";
+}
+.icon-flexpay-note-arrow:before {
+  content: "1";
+}
+.icon-flexpay-note:before {
+  content: "2";
+}
+.icon-flexpay-close-big:before {
+  content: "3";
+}
+.icon-flexpay-search:before {
+  content: "4";
+}
+.icon-flexpay-corner:before {
+  content: "5";
+}
+.icon-flexpay-lock:before {
+  content: "6";
+}
+.icon-flexpay-download:before {
+  content: "7";
+}
+.icon-flexpay-shopping:before {
+  content: "8";
+}
+.icon-flexpay-circle-home:before {
+  content: "9";
+}
+.icon-flexpay-circle-settings:before {
+  content: "!";
+}
+.icon-flexpay-circle-user:before {
+  content: "\"";
+}
+.icon-flexpay-circle-arrow-left:before {
+  content: "#";
+}
+
+.icon-flexpay-personalkortet:before {
+  content: "$";
+}
+.icon-flexpay-benify:before {
+  content: "%";
+}
+.icon-flexpay-circle-personalkortet:before {
+  content: "a";
+}
+.icon-flexpay-circle-heart:before {
+  content: "&";
+}

@@ -1,0 +1,258 @@
+ 
+ .offer-header {
+    margin-top:0;
+    margin-bottom: 11px;
+     
+     h4 {
+       padding: 0;
+
+     }
+
+ }
+
+.all-offer-link {
+
+  margin-top:   11px;
+  margin-bottom: 0px;
+  text-align: left;
+   width:100%;
+
+}
+
+.carousel-indicators {
+    bottom: 0;
+    margin-top: 15px;
+    left:35%;
+   
+
+    li {
+      width: 12px;
+      height: 12px;
+      border: 0;
+      margin: 0 0 0 0;
+      background-color: $primaryTextColor;
+    }
+  ;
+
+    li.active {
+
+      background-color: $notificationTextColor;
+    }
+}
+
+
+
+ @import "module-base"; 
+
+//*****************************************************
+// MODULE OFFER 
+//*****************************************************
+
+ .module {
+
+
+  
+    &.module-offer {
+
+      min-height: 465px;
+      margin-top: 40px;
+      
+      &.module-bottom-margin {
+        margin-bottom: 60px;
+      } 
+      
+
+      .module-offer-image {
+
+        width: 100%;
+        border-bottom: 1px solid $moduleOutlineColor;
+        position: relative;
+
+        .offer-image {
+          width: 100%;
+        }
+      
+
+        &:before {
+
+          @extend  .glyphicon-custom;
+
+         
+          width: 60px;
+          height: 61px;
+          line-height: 62px;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+        }
+
+        &:after {
+
+          @extend  .glyphicon-custom;
+
+          color: white;
+          width: 27px;
+          height: 24px;
+          line-height: 35px;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        &.offer-benefits {
+
+          &:before {
+            color: $offerBenefitColor;
+             content: '5';
+            font-size: 60px;
+            font-style: normal;
+            font-weight: normal;
+          }
+
+          &:after {
+            color: white;
+            content: 'E';
+            font-size: 21px;
+            font-style: normal;
+            font-weight: normal;
+          }
+        }
+
+
+        &.offer-benify {
+
+          &:before {
+            color: $offerBenifyColor;
+            content: '5';
+            font-size: 60px;
+            font-style: normal;
+            font-weight: normal;
+          }
+
+          &:after {
+            color: white;
+            content: '$';
+            font-size: 21px;
+            font-style: normal;
+            font-weight: normal;
+          }
+        }
+
+      }
+
+      h3 {
+        margin: 0 30px 0 30px;
+        padding: 30px 0 0 0;
+
+        color: $primaryTextColor;
+
+        text-align: left;
+        font-weight: 600;
+
+      }
+
+      p {
+        margin: 10px 30px 10px 30px;
+       
+      
+
+      }
+
+      .deal{
+
+          color:$dealColor;
+          font-size: 24px;
+          text-align: left;
+          width:100%;
+          font-weight: 600;
+          margin: 0px 0px 20px 30px;
+
+      }
+
+      .btn-shop {
+        position: absolute;
+        width: 100%;
+        bottom:0;
+
+      }
+
+
+    }
+}
+
+
+.offer-carousel {
+
+ //height: 100%;
+ margin-top: 0px;
+
+     .module-offer { 
+         margin-top: 0px;
+     }
+  
+
+}
+
+.benify-carousel {
+
+ //height: 100%;
+ margin-top: 0px;
+
+     .module-offer { 
+         margin-top: 0px;
+     }
+  
+
+}
+
+
+.row .offer-header + .module-offer {
+
+  margin-top:0px;
+
+}
+
+.row .offer-header + .offer-carousel {
+ margin-top:0px;
+}
+
+.row .offer-carousel + .all-offer-link {
+   margin-top:0px;
+   text-align: center; 
+ 
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 768px) {
+.module {
+  &.module-offer {
+
+         
+      &.module-bottom-margin {
+        margin-bottom: 0px;
+      } 
+  }
+}
+  .all-offer-link {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center; 
+    width:100%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+

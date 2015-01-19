@@ -1,0 +1,2 @@
+C:\work\UmbracoBoilerplate\Umbraco.Boilerplate.Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\work\UmbracoBoilerplate\Umbraco.Boilerplate.Azure\bin\Debug\ServiceDefinition.csdef

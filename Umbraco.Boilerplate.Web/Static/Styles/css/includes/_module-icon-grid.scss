@@ -1,0 +1,74 @@
+ @import "module-base"; 
+
+//*****************************************************
+// MODULE ICON GRID
+//*****************************************************
+
+ .module {
+
+  &.module-icon-grid {
+
+    display: table ;
+
+    width: 100%;
+
+    h3 {
+      
+      padding: 30px 0 10px;
+      color: $primaryTextColor;
+      text-align: center;
+      font-weight:900;
+    }
+
+
+    .tile-row {
+      display: table-row ;
+     
+      .tile { 
+         display: table-cell ;
+         padding:20px;
+
+         .tile-content {
+            display: table ;
+            margin:0 auto;
+         }
+
+         h3 {
+          display: table-row ;
+          height: 40px;
+         }
+
+         .module-content  {
+             text-align:center;
+             display: table-row ;
+           
+            .module-icon {
+               
+               font-size: 90px;
+               color:$brandColor;
+
+                &.image {
+                  font-size: 0px;
+                  img {
+                    margin-bottom:20px ;
+                    width: 90px;
+                  }
+
+                }
+            }
+
+
+         }
+
+      }
+    }
+ }
+}
+
+    
+    
+    
+
+
+
+     

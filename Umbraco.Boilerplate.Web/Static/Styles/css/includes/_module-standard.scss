@@ -1,0 +1,118 @@
+ @import "module-base"; 
+
+//*****************************************************
+// MODULE STANDARD 
+//*****************************************************
+
+ .module {
+  
+  &.module-standard {
+
+    h3 {
+      
+      padding: 30px 0 10px;
+      color: $primaryTextColor;
+      text-align: center;
+      font-weight:900;
+    }
+
+   p {
+
+        text-align: left;
+
+    }
+
+
+    .module-content  {
+
+	    margin-top: 20px;
+     
+      &.default	{
+     	
+      	margin: 10px 20px 20px 20px;
+        text-align:center;
+        p { text-align:center; };
+     	
+       	.module-icon {
+       	 	
+
+       	 	font-size: 90px;
+       	 	margin-bottom:20px ;
+       	 	color:$brandColor;
+
+       	 	&.image {
+  				
+          font-size: 0px;
+  				
+          img {
+  		 	 		margin-bottom:20px ;
+  		 	 		width: 90px;
+  				}
+
+       	 	}
+       	 	
+       	}	
+
+      }
+
+      &.image {
+        margin:10px 0 0 0;
+        
+        img {
+
+          width: 100%;
+          border-bottom: 1px solid $moduleOutlineColor;
+          position: relative;
+
+
+
+        }
+
+        h3 {
+          padding:0 0 0 0;
+          margin: 20px 20px 10px 20px;
+          text-align: left;
+
+        }
+
+        p {
+
+          margin: 10px 20px 20px 20px;
+
+        }
+
+
+
+      }
+
+      &.counter	{ 
+      	margin: 0 0 20px;
+      	 h2 {
+      	 	margin:0;
+      	 	font-weight: 300;
+      	 	text-align:center;
+      	 	font-size: 120px;
+      	 	color:$activeOrderColor;
+      	 }
+
+      	 h3 {
+
+      	 	font-size: 16px;
+      	 	color:$bodyTextColor;
+      	 	padding:20px 0 11px 0 ;
+
+      	 }
+
+      }
+
+
+	}
+
+    .btn-standard {
+
+      width: 100%;
+      position:absolute;
+      bottom:0;
+    }
+  }
+}
