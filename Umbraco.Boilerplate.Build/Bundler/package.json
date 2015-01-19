@@ -26,15 +26,16 @@
   },
   "_id": "Bundler@1.1.30",
   "dependencies": {
+    "LiveScript": ">=1.2.0",
     "clean-css": ">=2.0.0",
     "coffee-script": ">=1.6.3",
     "debug": ">=1.0.2",
     "less": ">=1.5.0",
-    "LiveScript": ">=1.2.0",
     "nib": ">=1.0.1",
     "node-sass": ">=0.7.0",
     "step": ">=0.0.5",
-    "stylus": ">=0.42.3"
+    "stylus": ">=0.42.3",
+    "uglify-js": "^2.4.16"
   },
   "_from": "Bundler@1.1.30"
 }

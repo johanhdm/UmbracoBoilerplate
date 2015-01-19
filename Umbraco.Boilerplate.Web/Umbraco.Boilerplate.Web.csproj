@@ -16,7 +16,7 @@
     <AssemblyName>Umbraco.Boilerplate.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -213,7 +213,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bundler\Bundler.cs" />
+    <Compile Include="Controllers\Bundler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -228,6 +228,8 @@
     <Content Include="Global.asax" />
     <Content Include="masterpages\dummy.txt" />
     <Content Include="media\dummy.txt" />
+    <Content Include="Static\Scripts\app.js" />
+    <Content Include="Static\Scripts\app.min.js" />
     <Content Include="usercontrols\dummy.txt" />
     <Content Include="Views\Partials\dummy.txt" />
     <Content Include="Web.config">
@@ -244,7 +246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="bundler\" />
     <Folder Include="Models\" />
     <Folder Include="Static\Scripts\js\App\" />
     <Folder Include="Static\Scripts\js\Libraries\" />
@@ -334,6 +336,16 @@
     <None Include="Properties\PublishProfiles\LocalDeploy.pubxml" />
     <Content Include="Static\Scripts\app.js.bundle" />
     <Content Include="Static\Styles\app.css.bundle" />
+    <None Include="Properties\PublishProfiles\umbracoboilerplate - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\umbracoboilerplate - Web Deploy.pubxml" />
+    <Content Include="Views\BlogOverview.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\TextPage.cshtml" />
+    <Content Include="Views\Partials\BottomNavigation.cshtml" />
+    <Content Include="Views\Partials\MainNavigation.cshtml" />
+    <Content Include="Views\Partials\Grid\Fanoe.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -353,7 +365,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49266</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://dev.klacken.sverigesradio.se/</IISUrl>
+          <IISUrl>http://localhost:49266/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -372,8 +384,8 @@
   </Target>
   <Import Project="..\packages\UmbracoCms.7.2.1\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.2.1\build\UmbracoCms.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>$(SolutionDir)Umbraco.Boilerplate.Build\Frontend\buildcss.cmd
+$(SolutionDir)Umbraco.Boilerplate.Build\Bundler\bundler.cmd</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

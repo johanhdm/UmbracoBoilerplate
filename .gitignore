@@ -26,7 +26,7 @@ Cached/
 packages/
 
 Umbraco.Boilerplate.Deploy/
-Umbraco.Boilerplate.Build/Bundler/node_modules/
+**/node_modules/
 
 # Don't ignore Umbraco packages (VisualStudio.gitignore mistakes this for a NuGet packages folder)
 # Make sure to include details from VisualStudio.gitignore BEFORE this
