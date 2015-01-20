@@ -285,9 +285,7 @@
     <Content Include="Static\Scripts\app.js" />
     <Content Include="Static\Scripts\app.min.js" />
     <Content Include="Static\Scripts\js\Libraries\bootstrap.js" />
-    <Content Include="Static\Scripts\js\Libraries\bootstrap.min.js" />
     <Content Include="Static\Scripts\js\Libraries\jquery.js" />
-    <Content Include="Static\Scripts\js\Libraries\jquery.min.js" />
     <Content Include="Static\Styles\app.css" />
     <Content Include="Static\Styles\dist\styles.css" />
     <Content Include="usercontrols\dummy.txt" />
