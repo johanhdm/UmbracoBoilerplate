@@ -24,13 +24,8 @@ Cached/
 *.min.js
 *.min.css
 
-/Umbraco.Boilerplate.Web/Static/Scripts/app.js
-/Umbraco.Boilerplate.Web/Static/Scripts/app.min.js
-
-/Umbraco.Boilerplate.Web/Static/Styles/app.css
-/Umbraco.Boilerplate.Web/Static/Styles/app.min.css
-
-/Umbraco.Boilerplate.Web/Static/Styles/dist
+!/Umbraco.Boilerplate.Web/Static/Scripts/app.js
+!/Umbraco.Boilerplate.Web/Static/Scripts/app.min.js
 
 packages/
 
