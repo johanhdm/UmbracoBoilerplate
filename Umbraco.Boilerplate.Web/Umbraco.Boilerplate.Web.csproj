@@ -367,8 +367,6 @@
     <None Include="Properties\PublishProfiles\LocalDeploy.pubxml" />
     <Content Include="Static\Scripts\app.js.bundle" />
     <Content Include="Static\Styles\app.css.bundle" />
-    <None Include="Properties\PublishProfiles\umbracoboilerplate - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\umbracoboilerplate - Web Deploy.pubxml" />
     <Content Include="Views\BlogOverview.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
     <Content Include="Views\Home.cshtml" />

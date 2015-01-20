@@ -10,8 +10,15 @@ Cached/
 **/Umbraco.Boilerplate.Web/bin
 **/Umbraco.Boilerplate.Web/[Oo]bj
 
+
+**/Umbraco.Boilerplate.Azure/bin
+**/Umbraco.Boilerplate.Azure/[Oo]bj
+**/Umbraco.Boilerplate.Azure/csx
+
 # OS XFolder junk
 .DS_Store
+
+*.suo
 
 # Minified JS and CSS
 *.min.js
@@ -22,6 +29,8 @@ Cached/
 
 /Umbraco.Boilerplate.Web/Static/Styles/app.css
 /Umbraco.Boilerplate.Web/Static/Styles/app.min.css
+
+/Umbraco.Boilerplate.Web/Static/Styles/dist
 
 packages/
 
