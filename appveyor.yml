@@ -8,9 +8,11 @@ before_build:
   - npm install
   - cd ../Frontend
   - npm install
+  - cd ../../
 
 nuget:
   project_feed: true
+
 build:
   project: Umbraco.Boilerplate.sln
   publish_azure: true
