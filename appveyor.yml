@@ -6,9 +6,8 @@ before_build:
   - nuget restore
   - cd Umbraco.Boilerplate.Build/Bundler
   - npm install
-  - cd ../../
-  - cd
-  - dir
+  - cd ../Frontend
+  - npm install
 
 nuget:
   project_feed: true
