@@ -10,4 +10,4 @@ nuget:
 build:
   project: Umbraco.Boilerplate.sln
   publish_azure: true
-  verbosity: detailed
+  verbosity: normal
