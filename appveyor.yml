@@ -2,13 +2,7 @@ version: 1.0.{build}
 configuration: Debug
 
 before_build:
-  - node -v
   - nuget restore
-  - cd Umbraco.Boilerplate.Build/Bundler
-  - npm install
-  - cd ../Frontend
-  - npm install
-  - cd ../../
 
 nuget:
   project_feed: true
