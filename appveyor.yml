@@ -3,6 +3,9 @@ configuration: Debug
 
 before_build:
   - nuget restore
+  - cd SR.P3Star.Klacken.Build/frontend/
+  - npm install
+  - gulp build
 
 nuget:
   project_feed: true
@@ -10,4 +13,5 @@ nuget:
 build:
   project: Umbraco.Boilerplate.sln
   publish_azure: true
+  publish_wap: true
   verbosity: normal
