@@ -3,11 +3,6 @@ configuration: Debug
 
 before_build:
   - nuget restore
-  - cd Umbraco.Boilerplate.Build/frontend/
-  - npm install gulp -g --silent
-  - npm install
-  - gulp build
-  - cd ../../
 
 nuget:
   project_feed: true

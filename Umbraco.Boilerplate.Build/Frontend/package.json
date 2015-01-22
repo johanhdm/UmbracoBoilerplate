@@ -1,8 +1,13 @@
 {
-  "name": "SR.P3Star.Klacken.Build.Frontend",
+  "name": "Umbraco7Boilerplate",
   "version": "0.0.1",
+  "description": "Boilerplate for Umbraco 7 projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johanhdm/UmbracoBoilerplate"
+  },
   "devDependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "3.8.10",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-concat": "^2.4.3",
     "gulp-minify-css": "^0.3.13",
@@ -10,5 +15,8 @@
     "gulp-ruby-sass": "^0.7.1",
     "gulp-sass": "^1.3.2",
     "gulp-uglify": "^1.1.0"
+  },
+  "scripts" : {
+	"build" : "gulp build"
   }
 }

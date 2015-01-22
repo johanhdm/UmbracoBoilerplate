@@ -1,7 +1,7 @@
 @echo off
 pushd "%~dp0"
 
-npm run build
+npm install
 popd
 
 exit %ERRORLEVEL%
