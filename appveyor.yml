@@ -3,7 +3,7 @@ configuration: Debug
 
 before_build:
   - nuget restore
-  - cd SR.P3Star.Klacken.Build/frontend/
+  - cd Umbraco.Boilerplate.Build/frontend/
   - npm install
   - gulp build
 
